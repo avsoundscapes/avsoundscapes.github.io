@@ -118,9 +118,9 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
-	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
+	<title>Learning to Stylize Soundscapes from In-the-Wild Videos</title>
+	<meta property="og:image" content="./resources/teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="Learning to Stylize Soundscapes from In-the-Wild Videos" />
 	<meta property="og:description" content="Paper description." />
 
 	<!-- Get from Google Analytics -->
@@ -138,16 +138,16 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
+		<span style="font-size:36px">Learning to Stylize Soundscapes from In-the-Wild Videos</span>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
+							<span style="font-size:24px"><a href="#">Anonymous Author</a></span>
 						</center>
 					</td>
-					<td align=center width=100px>
+					<!-- <td align=center width=100px>
 						<center>
 							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
 						</center>
@@ -156,7 +156,7 @@
 						<center>
 							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
 						</center>
-					</td>
+					</td> -->
 				</tr>
 			</table>
 			<table align=center width=250px>
@@ -168,20 +168,21 @@
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='https://github.com/avsoundscapes/avsoundscapes.github.io'>[GitHub]</a></span><br>
 						</center>
 					</td>
 				</tr>
 			</table>
 		</table>
 	</center>
-
+	
+	<br><br>
 	<center>
 		<table align=center width=850px>
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
+						<img class="round" style="width:800px" src="./resources/teaser.gif"/>
 					</center>
 				</td>
 			</tr>
@@ -189,7 +190,8 @@
 		<table align=center width=850px>
 			<tr>
 				<td>
-					This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>.
+					<!-- This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>. -->
+					<br><br></nr><span style="font-weight: bold;">Audio-Visual Soundscape Stylization</span>. We manipulate the soundscapes of input audio, guided by a user-provided audio-visual sample that specifies the desired auditory atmosphere, such as the sounds of people wandering about the beach or seated on a bus. This could involve elements like roaring ocean waves or echoing conversations. The ultimate goal is to generate <span style="color: #800080; font-weight: bold;">ambient soundscapes</span> that mimic those in the conditional examples, while allowing for some modifications to the <span style="color: #ff5625; font-weight: bold;">acoustic soundscapes</span> of the input audio.
 				</td>
 			</tr>
 		</table>
@@ -201,30 +203,22 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+				Speech recordings convey a great deal of information about the scenes, resulting in a variety of effects ranging from reverberation to additional ambient sounds. In this paper, we learn to restyle input speech to sound as though it was recorded within a different scene, given an audio (or audio-visual) example recorded from that scene. Our model learns through self-supervision, taking advantage of the fact that natural video contains recurring sound events and textures. We extract an audio clip from a video and apply speech enhancement. We then train a latent diffusion model to recover the original sound, using another audio-visual clip taken from elsewhere in the video as a conditional hint. Through this process, the model learns to transfer the conditional example's sound properties to the input sound. We show that our model can be successfully trained using unlabeled, in-the-wild videos, and that an additional visual signal can improve its sound prediction abilities.
 			</td>
 		</tr>
 	</table>
 	<br>
 
 	<hr>
-	<center><h1>Talk</h1></center>
+	<center><h1>Results Video</h1></center>
 	<p align="center">
-		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+		<iframe width="960" height="540" src="./resources/video_demo.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
 	</p>
+	<br>
 
-	<table align=center width=800px>
-		<br>
-		<tr>
-			<center>
-				<span style="font-size:28px"><a href=''>[Slides]</a>
-				</span>
-			</center>
-		</tr>
-	</table>
 	<hr>
 
-	<center><h1>Code</h1></center>
+	<!-- <center><h1>Code</h1></center>
 
 	<table align=center width=420px>
 		<center>
@@ -270,7 +264,7 @@
 				In Conference, 20XX.<br>
 				(hosted on <a href="">ArXiv</a>)<br>
 				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
-				<span style="font-size:4pt"><a href=""><br></a>
+				<!-- <span style="font-size:4pt"><a href=""><br></a>
 				</span>
 			</td>
 		</tr>
@@ -286,7 +280,7 @@
 	</table>
 
 	<hr>
-	<br>
+	<br> -->
 
 	<table align=center width=900px>
 		<tr>
