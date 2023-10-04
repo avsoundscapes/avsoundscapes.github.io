@@ -128,7 +128,7 @@
 	<title>Learning to Stylize Soundscapes from In-the-Wild Videos</title>
 	<meta property="og:image" content="./resources/teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="Learning to Stylize Soundscapes from In-the-Wild Videos" />
-	<meta property="og:description" content="Paper description." />
+	<meta property="og:description" content="Audio-Visual Soundscape Stylization." />
 
 	<!-- Get from Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -224,6 +224,31 @@
 	<br>
 
 	<hr>
+
+	<center><h1>Method</h1></center>
+	<table align=center width=850px>
+		<tr>
+			<td align=center width=850px>
+				<center>
+					<video width="100%" autoplay loop muted playsinline>
+						<source src="./resources/method_demo.mp4" type="video/mp4">
+					</video>
+				</center>
+			</td>
+		</tr>
+	</table>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					Our pretext task draws inspiration from the observation that sound textures within a video tend to exhibit temporal coherence, especially when sound events are recurrent. Moreover, similar sound events often share semantically similar visual appearances, particularly when sourced from the same video. Consequently, randomly selected pairs of clips from a video frequently exhibit a notable correlation. In such instances, the model can leverage this correlation to enhance its stylization capabilities. Hence, we pose our task as an audio-to-audio stylization problem, where another clip from a different time step is provided as the conditional reference.
+				</td>
+			</tr>
+		</center>
+	</table>
+	<br>
+
+	<hr>
 	<center><h1>Dataset</h1></center>
 	<center>
 		<table align=center>
@@ -242,38 +267,8 @@
 		</table>
 	</center>
 	<br>
-	
-	<hr>
 
-	<!-- <center><h1>Code</h1></center>
-
-	<table align=center width=420px>
-		<center>
-			<tr>
-				<td>
-				</td>
-			</tr>
-		</center>
-	</table>
-	<table align=center width=400px>
-		<tr>
-			<td align=center width=400px>
-				<center>
-					<td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
-				</center>
-			</td>
-		</tr>
-	</table>
-	<table align=center width=850px>
-		<center>
-			<tr>
-				<td>
-					Short description if wanted
-				</td>
-			</tr>
-		</center>
-	</table>
-	<table align=center width=800px>
+	<!-- <table align=center width=800px>
 		<br>
 		<tr><center>
 			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
@@ -290,8 +285,8 @@
 				<b>Creative and Descriptive Paper Title.</b><br>
 				In Conference, 20XX.<br>
 				(hosted on <a href="">ArXiv</a>)<br>
-				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
-				<!-- <span style="font-size:4pt"><a href=""><br></a>
+				(<a href="./resources/camera-ready.pdf">camera ready</a>)<br>
+				<span style="font-size:4pt"><a href=""><br></a>
 				</span>
 			</td>
 		</tr>
@@ -304,10 +299,10 @@
 				<a href="./resources/bibtex.txt">[Bibtex]</a>
 			</center></td>
 		</tr>
-	</table>
+	</table> -->
 
 	<hr>
-	<br> -->
+	<br>
 
 	<table align=center width=900px>
 		<tr>
@@ -320,23 +315,23 @@
 		</tr>
 	</table>
 
-<be>
+<br>
 
 <script type="text/javascript"> 
- var sc_project=12691142;  
- var sc_invisible=1;  
- var sc_security="b5064dc1";  
- </script> 
- <script type="text/javascript" 
- src="https://www.statcounter.com/counter/counter.js" 
- async></script> 
- <noscript><div class="statcounter"><a title="Web Analytics" 
- href="https://statcounter.com/" target="_blank"><img 
- class="statcounter" 
- src="https://c.statcounter.com/12691142/0/b5064dc1/1/" 
- alt="Web Analytics" 
- referrerPolicy="no-referrer-when-downgrade"></a></div></noscript> 
-
+	var sc_project=12691142;  
+	var sc_invisible=1;  
+	var sc_security="b5064dc1";  
+	</script> 
+	<script type="text/javascript" 
+	src="https://www.statcounter.com/counter/counter.js" 
+	async></script> 
+	<noscript><div class="statcounter"><a title="Web Analytics" 
+	href="https://statcounter.com/" target="_blank"><img 
+	class="statcounter" 
+	src="https://c.statcounter.com/12691142/0/b5064dc1/1/" 
+	alt="Web Analytics" 
+	referrerPolicy="no-referrer-when-downgrade"></a></div></noscript> 
+	
 </body>
 </html>
 
