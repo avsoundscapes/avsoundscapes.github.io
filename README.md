@@ -1,11 +1,9 @@
-## <b>Webpage template</b>
+## <b>Learning to Stylize Soundscapes form In-the-Wild Videos</b>
 
-This webpage template was made for a [colorful ECCV paper](http://richzhang.github.io/colorization/). See how the webpage looks [here](https://richzhang.github.io/webpage-template).
+Official Repository of the paper: [Learning to Stylize Soundscapes form In-the-Wild Videos](https://openreview.net/forum?id=1HgJZl3HgT)*.
 
-To use this template, clone the repo:
+Project Page: https://avsoundscapes.github.io/
 
-```
-git clone https://github.com/richzhang/webpage-template.git
-```
-
-Copy the contents into a `gh-pages` branch of a GitHub repo. That will automatically make a webpage under address [GITHUB_USERNAME.github.io/REPO_NAME](GITHUB_USERNAME.github.io/REPO_NAME).
+<p align="center">
+    <img src="./resources/teaser.png">
+</p>
